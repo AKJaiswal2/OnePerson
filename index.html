@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .px1{
+            
+            margin-top: 30px;
+            margin-left: 560px;
+            background: #CCCCCC;
+           height: 800px;
+           width: 600px;
+            position: relative;
+            
+            
+        }
+
+        table, th, td {
+        border: 1px solid black;
+         }
+
+    </style>
+    <title>Covering_letter_One_Person</title>
+</head>
+<body>
+    <center>
+        <div>
+            <th>Name</th>
+            <td><input type="text" id="n0" onchange="update(id,'n',0)"></td>
+        </div>
+        <br>
+        <div>
+            <th>Passport Number</th>
+            <td><input type="text" id="pn0" onchange="update(id,'pn',0)"></td>
+        </div>
+        <br>
+        <div>
+            <th>Phone No.</th>
+            <td><input type="number" id="phoneno0" onchange="update(id,'phone',0)"></td>
+        </div>
+        <br>
+        <div>
+            <th>Date Of Birth</th>
+            <td><input type="date" id="dob0" onchange="update(id,'dob',0)"></td>
+        </div>
+        <br>
+        <div>
+            <th>Relationship To Me</th>
+            <td><select name="Relationships" id="rtm0" onchange="update(id,'rtm',0)">
+                <option></option>
+                <option value="Myself">Myself</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Son">Son</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Spouse">Spouse</option>
+                <option value="Husband">Husband</option>
+                <option value="GrandMother">GrandMother</option>
+                <option value="GrandFather">GrandFather</option>
+                <option value="Uncle">Uncle</option>
+                <option value="Aunt">Aunt</option>
+            </select>
+            </td>
+        </div>
+        <br>
+        <div>
+            <th>Marital Status</th>
+            <td><select name="Marital Status" id="ms0" onchange="update(id,'ms',0)">
+                <option></option>
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+                </select>
+            </td>
+        </div>
+        <br>
+        <div>
+            <th>Occupation</th>
+            <td><select name="Occupation" id="O0" onchange="update(id,'O',0)">
+                <option></option>
+                <option value="Buisness">Buisness</option>
+                <option value="Service">Service</option>
+                <option value="Homemaker">Homemaker</option>
+                <option value="Student">Student</option>
+            </select>
+        </td>
+    </div>
+    <br>
+    <div id="render">
+      
+    </div>
+</center>
+<div class="px1">
+    <div id="header">
+        <p>Date: <span id="date">18.03.2019</span>
+            <br>
+            <br>
+            To,
+            <br>
+            The Visa Officer’s
+            <br>
+            Singapore High Commission
+            <br>
+            New Delhi
+            <br>
+            <br>
+            Sub: Visa application for Mr <span class="name1">Giriraj Bagri</span> (Passport No. <span class="passport1">Z4480225</span>)
+            <br>
+            <br>
+            Dear Sir,
+            <br>
+            <br>
+            I, <span class="name1">Giriraj Bagri</span>, am currently working at <span id="company1">MVM Commodities Pvt Ltd</span> as <span id="designation1">Principal 
+            Officer</span> and am an integral part of the organization.
+            <br>
+            <br>
+            I propose to visit Singapore as tourist. As per my 
+            itinerary i will stay in Singapore from 29th March 2019 to 1st April 2019 for 4 days.
+            I plan to Visit Universal Studios, Sentosa Island, Gardens by the bay and Jurong 
+            Bird Park out of the many attractions that Singapore has to offer.</p>
+    </div>
+    <br>
+    <div id="body">
+        <table>
+            <tr>
+                <th>NAME</th>
+                <th>PASSPORT NO</th>
+                <th>DOB (YYYY/MM/DD)</th>
+                <th>RELATIONSHIP TO ME</th>
+            </tr>
+            <tr>
+                <td class="name1"></td>
+                <td class="passport1"></td>
+                <td id="dateofbirth0"></td>
+                <td id="relation0"></td>
+            </tr>
+        </table>
+    </div>
+   <br>
+   <div id="footer">
+    <p>
+        I am already holding confirmed return air tickets, hotel reservations, and sufficient 
+        funds to support myselves during this tour. I have strong familial ties in INDIA and 
+        have the capacity to support us financially or otherwise. All necessary documents 
+        are attached for your kind perusal.
+        <br>
+        <br>
+        I would like to request your kind self to allow us to visit your country as a tourist and 
+        provide us the necessary multiple entry visa.
+        <br>
+        <br>
+        Thanking you,
+        <br>
+        Yours Sincerely,
+        <br>
+        ………………………………….
+        <br>
+        (<span class="name1">Giriraj Bagri</span>)
+        <br>
+        Phone: <span id="phoneno0">9831194903</span>
+    </p>
+   </div>
+<script src="index.js"></script>
+</body>
+</html>
